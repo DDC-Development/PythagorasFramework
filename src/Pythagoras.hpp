@@ -12,20 +12,20 @@ namespace Pythagoras
     public:
         TheoremFunctions(){}
         ~TheoremFunctions(){}
-        float CalculateC(float A, float B)
+        double CalculateC(double A, double B)
         {
             // c^2 = a^2 + b^2
             return sqrt((A*A)+(B*B));
             // This returns the value of C, not the value of a^2 + b^2
         }
-        float CalculateA(float C, float B)
+        double CalculateA(double C, double B)
         {
             // c^2 = a^2 + b^2
             // c^2 - b^2 = a^2
             return sqrt((C*C)-(B*B));
             // This returns the value of A, not the value of c^2 - b^2
         }
-        float CalculateB(float C, float A)
+        double CalculateB(double C, double A)
         {
             // c^2 = a^2 + b^2
             // c^2 - a^2 = b^2
